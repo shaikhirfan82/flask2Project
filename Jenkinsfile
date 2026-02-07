@@ -37,7 +37,7 @@ pipeline {
             steps {
                 sh '''
                 docker rm -f $CONTAINER_NAME || true
-                docker run -d -p 5000:5000 --name $CONTAINER_NAME $IMAGE_NAME
+                docker run -d -p 8081:8081 --name $CONTAINER_NAME $IMAGE_NAME
                 '''
             }
         }
