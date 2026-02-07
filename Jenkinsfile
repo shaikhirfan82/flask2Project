@@ -1,4 +1,3 @@
-
 pipeline {
     agent any
 
@@ -8,6 +7,7 @@ pipeline {
                 git 'https://github.com/shaikhirfan82/flask2Project.git'
             }
         }
+
         stage('Build Docker Image') {
             steps {
                 sh 'docker build -t flask-jenkins .'
