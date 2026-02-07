@@ -5,10 +5,9 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/your-username/flask-jenkins-devops.git'
+                git 'https://github.com/shaikhirfan82/flask2Project.git'
             }
         }
-
         stage('Build Docker Image') {
             steps {
                 sh 'docker build -t flask-jenkins .'
