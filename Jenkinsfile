@@ -18,7 +18,7 @@ pipeline {
             steps {
                 sh '''
                 docker rm -f flask_app || true
-                docker run -d -p 5000:5000 --name flask_app flask-jenkins
+                docker run -d -p 2000:2000 --name flask_app flask-jenkins
                 '''
             }
         }
